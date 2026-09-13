@@ -7,18 +7,32 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+# npm lockfile — bun.lock is the canonical lockfile for CI
+package-lock.json
+
+# Next.js build output
+.next
+out
+
+# Production builds
 dist
 dist-ssr
-.output
-.vinxi
-.tanstack/**
-.nitro
-*.local
 
-# Wrangler / Cloudflare
-.wrangler/
-.dev.vars
+# Bun
+.bun
+
+# Environment files
+*.local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dev shots (generated at build time, not committed)
+public/images/generated/
 
 # Editor directories and files
 .vscode/*
@@ -30,3 +44,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Vercel
+.vercel
+
+# TypeScript incremental build info
+*.tsbuildinfo
+next-env.d.ts

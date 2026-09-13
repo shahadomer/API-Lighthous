@@ -1,4 +1,5 @@
 <!-- LOVABLE:BEGIN -->
+
 > [!IMPORTANT]
 > This project is connected to [Lovable](https://lovable.dev). Avoid rewriting
 > published git history — force pushing, or rebasing/amending/squashing commits
@@ -7,6 +8,7 @@
 >
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
+
 <!-- LOVABLE:END -->
 
 # API Lighthouse — Agent Instructions
@@ -51,10 +53,13 @@ These exist because this folder already contained a Lovable-generated project wh
 plan was written assuming a fresh scaffold. **Do not resolve any of these unilaterally.**
 Ask Claude. Each is tracked until the Coordinator rules on it.
 
-1. **Stack.** The plan (section 12.1) specifies Next.js App Router with PostgreSQL via
+1. ~~**Stack.** The plan (section 12.1) specifies Next.js App Router with PostgreSQL via
    Drizzle and route handlers under `/app/api`. This codebase is TanStack Start on Vite
    with React 19, no database layer yet. Do not migrate either direction, and do not
-   build new features assuming one stack over the other, until this is settled.
+   build new features assuming one stack over the other, until this is settled.~~
+   **RESOLVED (DEV-01, 13 Sep 2026):** Shahad confirmed migration to Next.js App Router
+   per section 12.1. TanStack Start removed. Database layer (Drizzle + PostgreSQL) is
+   DEV-06 scope, not yet present.
 2. **Brand palette.** The plan (section 3.1–3.2) specifies navy `#17314D` and amber
    `#FEBD21`, sampled from the actual logo, with measured contrast ratios. The existing
    `README.md` in this repo specifies a different palette (navy `#0B1730`, blue
