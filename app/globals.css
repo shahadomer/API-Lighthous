@@ -145,9 +145,8 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  --font-sans:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", ui-sans-serif, system-ui,
-    sans-serif;
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
 :root {
@@ -238,6 +237,97 @@
   --sidebar-accent-foreground: oklch(0.209 0.053 263.3);
   --sidebar-border: oklch(0.88 0.01 258.3);
   --sidebar-ring: oklch(0.48 0.222 266.3);
+
+  /* ==========================================================================
+   * Typography & Type Scale Tokens (plan §3.3)
+   * Base: 16px root. Scale in rem against 16px.
+   * Inter (variable) covers Display, Headings, Body, and Label.
+   * JetBrains Mono (variable) covers Code and API values.
+   * ========================================================================== */
+
+  /* Display XL (hero H1): 72px desktop / 40px mobile, weight 600, tracking -0.03em, leading 1.05 */
+  --type-display-xl-size: 4.5rem;
+  --type-display-xl-size-mobile: 2.5rem;
+  --type-display-xl-weight: 600;
+  --type-display-xl-tracking: -0.03em;
+  --type-display-xl-leading: 1.05;
+  --font-size-display-xl: 4.5rem;
+  --font-size-display-xl-mobile: 2.5rem;
+
+  /* Display L (section H2): 48px desktop / 32px mobile, weight 600, tracking -0.02em, leading 1.12 */
+  --type-display-l-size: 3rem;
+  --type-display-l-size-mobile: 2rem;
+  --type-display-l-weight: 600;
+  --type-display-l-tracking: -0.02em;
+  --type-display-l-leading: 1.12;
+  --font-size-display-l: 3rem;
+  --font-size-display-l-mobile: 2rem;
+
+  /* Heading M (H3): 30px desktop / 24px mobile, weight 600, tracking -0.015em, leading 1.25 */
+  --type-heading-m-size: 1.875rem;
+  --type-heading-m-size-mobile: 1.5rem;
+  --type-heading-m-weight: 600;
+  --type-heading-m-tracking: -0.015em;
+  --type-heading-m-leading: 1.25;
+  --font-size-heading-m: 1.875rem;
+  --font-size-heading-m-mobile: 1.5rem;
+
+  /* Heading S (H4, card title): 20px desktop / 18px mobile, weight 600, tracking -0.01em, leading 1.35 */
+  --type-heading-s-size: 1.25rem;
+  --type-heading-s-size-mobile: 1.125rem;
+  --type-heading-s-weight: 600;
+  --type-heading-s-tracking: -0.01em;
+  --type-heading-s-leading: 1.35;
+  --font-size-heading-s: 1.25rem;
+  --font-size-heading-s-mobile: 1.125rem;
+
+  /* Body L (hero support, lede): 20px desktop / 17px mobile, weight 400, tracking 0, leading 1.55 */
+  --type-body-l-size: 1.25rem;
+  --type-body-l-size-mobile: 1.0625rem;
+  --type-body-l-weight: 400;
+  --type-body-l-tracking: 0em;
+  --type-body-l-leading: 1.55;
+  --font-size-body-l: 1.25rem;
+  --font-size-body-l-mobile: 1.0625rem;
+
+  /* Body M (default): 17px desktop / 16px mobile, weight 400, tracking 0, leading 1.6 */
+  --type-body-m-size: 1.0625rem;
+  --type-body-m-size-mobile: 1rem;
+  --type-body-m-weight: 400;
+  --type-body-m-tracking: 0em;
+  --type-body-m-leading: 1.6;
+  --font-size-body-m: 1.0625rem;
+  --font-size-body-m-mobile: 1rem;
+
+  /* Body S (captions, meta): 15px desktop / 14px mobile, weight 400, tracking 0, leading 1.5 */
+  --type-body-s-size: 0.9375rem;
+  --type-body-s-size-mobile: 0.875rem;
+  --type-body-s-weight: 400;
+  --type-body-s-tracking: 0em;
+  --type-body-s-leading: 1.5;
+  --font-size-body-s: 0.9375rem;
+  --font-size-body-s-mobile: 0.875rem;
+
+  /* Label (buttons, chips): 15px desktop / 15px mobile, weight 550, tracking 0.01em, leading 1.2 */
+  --type-label-size: 0.9375rem;
+  --type-label-size-mobile: 0.9375rem;
+  --type-label-weight: 550;
+  --type-label-tracking: 0.01em;
+  --type-label-leading: 1.2;
+  --font-size-label: 0.9375rem;
+  --font-size-label-mobile: 0.9375rem;
+
+  /* Code: 14px desktop / 13px mobile, weight 450, tracking 0, leading 1.65 */
+  --type-code-size: 0.875rem;
+  --type-code-size-mobile: 0.8125rem;
+  --type-code-weight: 450;
+  --type-code-tracking: 0em;
+  --type-code-leading: 1.65;
+  --font-size-code: 0.875rem;
+  --font-size-code-mobile: 0.8125rem;
+
+  /* Typographic measures (plan §3.3: prose max 68ch) */
+  --measure-prose: 68ch;
 }
 
 .dark {
@@ -330,6 +420,173 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
+    font-size: var(--type-body-m-size-mobile);
+    line-height: var(--type-body-m-leading);
+    font-weight: var(--type-body-m-weight);
+    letter-spacing: var(--type-body-m-tracking);
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (min-width: 768px) {
+    body {
+      font-size: var(--type-body-m-size);
+    }
+  }
+
+  code,
+  kbd,
+  samp,
+  pre {
+    font-family: var(--font-mono);
+  }
+}
+
+@layer utilities {
+  /* ==========================================================================
+   * Type Scale Utility Classes (plan §3.3)
+   * Providing both .text-* and .type-* aliases for full compatibility
+   * ========================================================================== */
+
+  /* Display XL (hero H1): 72px desktop / 40px mobile, weight 600, tracking -0.03em, leading 1.05 */
+  .text-display-xl,
+  .type-display-xl {
+    font-family: var(--font-sans);
+    font-size: var(--type-display-xl-size-mobile);
+    line-height: var(--type-display-xl-leading);
+    font-weight: var(--type-display-xl-weight);
+    letter-spacing: var(--type-display-xl-tracking);
+  }
+
+  /* Display L (section H2): 48px desktop / 32px mobile, weight 600, tracking -0.02em, leading 1.12 */
+  .text-display-l,
+  .type-display-l {
+    font-family: var(--font-sans);
+    font-size: var(--type-display-l-size-mobile);
+    line-height: var(--type-display-l-leading);
+    font-weight: var(--type-display-l-weight);
+    letter-spacing: var(--type-display-l-tracking);
+  }
+
+  /* Heading M (H3): 30px desktop / 24px mobile, weight 600, tracking -0.015em, leading 1.25 */
+  .text-heading-m,
+  .type-heading-m {
+    font-family: var(--font-sans);
+    font-size: var(--type-heading-m-size-mobile);
+    line-height: var(--type-heading-m-leading);
+    font-weight: var(--type-heading-m-weight);
+    letter-spacing: var(--type-heading-m-tracking);
+  }
+
+  /* Heading S (H4, card title): 20px desktop / 18px mobile, weight 600, tracking -0.01em, leading 1.35 */
+  .text-heading-s,
+  .type-heading-s {
+    font-family: var(--font-sans);
+    font-size: var(--type-heading-s-size-mobile);
+    line-height: var(--type-heading-s-leading);
+    font-weight: var(--type-heading-s-weight);
+    letter-spacing: var(--type-heading-s-tracking);
+  }
+
+  /* Body L (hero support, lede): 20px desktop / 17px mobile, weight 400, tracking 0, leading 1.55 */
+  .text-body-l,
+  .type-body-l {
+    font-family: var(--font-sans);
+    font-size: var(--type-body-l-size-mobile);
+    line-height: var(--type-body-l-leading);
+    font-weight: var(--type-body-l-weight);
+    letter-spacing: var(--type-body-l-tracking);
+  }
+
+  /* Body M (default): 17px desktop / 16px mobile, weight 400, tracking 0, leading 1.6 */
+  .text-body-m,
+  .type-body-m {
+    font-family: var(--font-sans);
+    font-size: var(--type-body-m-size-mobile);
+    line-height: var(--type-body-m-leading);
+    font-weight: var(--type-body-m-weight);
+    letter-spacing: var(--type-body-m-tracking);
+  }
+
+  /* Body S (captions, meta): 15px desktop / 14px mobile, weight 400, tracking 0, leading 1.5 */
+  .text-body-s,
+  .type-body-s {
+    font-family: var(--font-sans);
+    font-size: var(--type-body-s-size-mobile);
+    line-height: var(--type-body-s-leading);
+    font-weight: var(--type-body-s-weight);
+    letter-spacing: var(--type-body-s-tracking);
+  }
+
+  /* Label (buttons, chips): 15px desktop / 15px mobile, weight 550, tracking 0.01em, leading 1.2 */
+  .text-label,
+  .type-label {
+    font-family: var(--font-sans);
+    font-size: var(--type-label-size-mobile);
+    line-height: var(--type-label-leading);
+    font-weight: var(--type-label-weight);
+    letter-spacing: var(--type-label-tracking);
+  }
+
+  /* Code: 14px desktop / 13px mobile, weight 450, tracking 0, leading 1.65 */
+  .text-code,
+  .type-code {
+    font-family: var(--font-mono);
+    font-size: var(--type-code-size-mobile);
+    line-height: var(--type-code-leading);
+    font-weight: var(--type-code-weight);
+    letter-spacing: var(--type-code-tracking);
+  }
+
+  @media (min-width: 768px) {
+    .text-display-xl,
+    .type-display-xl {
+      font-size: var(--type-display-xl-size);
+    }
+    .text-display-l,
+    .type-display-l {
+      font-size: var(--type-display-l-size);
+    }
+    .text-heading-m,
+    .type-heading-m {
+      font-size: var(--type-heading-m-size);
+    }
+    .text-heading-s,
+    .type-heading-s {
+      font-size: var(--type-heading-s-size);
+    }
+    .text-body-l,
+    .type-body-l {
+      font-size: var(--type-body-l-size);
+    }
+    .text-body-m,
+    .type-body-m {
+      font-size: var(--type-body-m-size);
+    }
+    .text-body-s,
+    .type-body-s {
+      font-size: var(--type-body-s-size);
+    }
+    .text-label,
+    .type-label {
+      font-size: var(--type-label-size);
+    }
+    .text-code,
+    .type-code {
+      font-size: var(--type-code-size);
+    }
+  }
+
+  /* Specific weight helpers for variable fonts (plan §3.3) */
+  .font-label {
+    font-weight: 550;
+  }
+  .font-code {
+    font-weight: 450;
+  }
+
+  /* Prose measure cap (plan §3.3: 68 characters for prose) */
+  .measure-prose {
+    max-width: var(--measure-prose);
   }
 }
