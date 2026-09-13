@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" fill="none" role="img" aria-label="Communication category illustration">
+  <rect width="400" height="300" rx="16" fill="#0B1730" />
+  <!-- Signal Transmission Cones -->
+  <g opacity="0.15" stroke="#2448D8" stroke-width="1.5">
+    <circle cx="200" cy="150" r="110" stroke-dasharray="6 6" />
+    <circle cx="200" cy="150" r="80" stroke-dasharray="4 4" />
+    <circle cx="200" cy="150" r="50" />
+  </g>
+  <!-- Geometric Message Bubble (Primary Blue) -->
+  <path d="M110 100h150a12 12 0 0 1 12 12v60a12 12 0 0 1-12 12h-90l-30 20v-20h-30a12 12 0 0 1-12-12v-60a12 12 0 0 1 12-12z" fill="#2448D8" fill-opacity="0.25" stroke="#2448D8" stroke-width="2" />
+  <!-- Waveform lines inside message -->
+  <line x1="130" y1="125" x2="240" y2="125" stroke="#F7F9FC" stroke-width="2.5" stroke-linecap="round" opacity="0.8" />
+  <line x1="130" y1="145" x2="200" y2="145" stroke="#F7F9FC" stroke-width="2.5" stroke-linecap="round" opacity="0.6" />
+  <!-- Outgoing High-Throughput Packet (Accent Highlight: Teal #087F8C) -->
+  <g transform="translate(235, 145)">
+    <circle cx="25" cy="25" r="28" fill="#087F8C" fill-opacity="0.2" />
+    <circle cx="25" cy="25" r="18" fill="#087F8C" />
+    <!-- Dispatch Arrow -->
+    <path d="M19 25h12M26 20l5 5-5 5" stroke="#F7F9FC" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <!-- Mini Signal Towers -->
+  <path d="M90 220l15-50 15 50M95 205h20" stroke="#2448D8" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+  <circle cx="105" cy="165" r="4" fill="#087F8C" />
+</svg>

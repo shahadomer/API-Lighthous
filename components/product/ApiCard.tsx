@@ -2,12 +2,27 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import type { ApiListing } from "@/lib/api-catalog";
 
-export function ApiCard({ api }: { api: ApiListing }) {
+export function ApiCard({
+  api,
+  showSampleBadge = true,
+}: {
+  api: ApiListing;
+  showSampleBadge?: boolean;
+}) {
   const href = `/apis/${api.providerSlug}/${api.slug}`;
 
   return (
-    <article className="flex h-full flex-col rounded-2xl border border-border bg-surface p-6 shadow-[var(--shadow-card)] transition hover:-translate-y-0.5 hover:shadow-lg">
-      <p className="text-xs font-semibold uppercase tracking-wide text-highlight">{api.category}</p>
+    <article className="relative flex h-full flex-col rounded-2xl border border-border bg-surface p-6 shadow-[var(--shadow-card)] transition hover:-translate-y-0.5 hover:shadow-lg">
+      <div className="flex items-center justify-between gap-2">
+        <p className="text-xs font-semibold uppercase tracking-wide text-highlight">
+          {api.category}
+        </p>
+        {(showSampleBadge || api.isSampleData) && (
+          <span className="rounded bg-secondary/80 px-2 py-0.5 font-mono text-[10px] font-medium text-muted-foreground uppercase tracking-wider">
+            Sample data
+          </span>
+        )}
+      </div>
       <h3 className="mt-2 text-lg font-semibold text-navy">
         <Link href={href} className="after:absolute after:inset-0 focus-visible:underline">
           {api.name}

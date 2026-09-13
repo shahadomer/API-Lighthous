@@ -17,6 +17,7 @@ export type ApiListing = {
   priceLabel: string;
   trial: boolean;
   auth: AuthMethod;
+  isSampleData?: boolean;
 };
 
 export const categories = [

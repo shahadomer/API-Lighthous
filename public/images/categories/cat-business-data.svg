@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" fill="none" role="img" aria-label="Business and company data category illustration">
+  <rect width="400" height="300" rx="16" fill="#0B1730" />
+  <!-- Grid Matrix Pattern -->
+  <g opacity="0.12" stroke="#2448D8" stroke-width="1">
+    <path d="M50 0v300M100 0v300M150 0v300M200 0v300M250 0v300M300 0v300M350 0v300" />
+    <path d="M0 50h400M0 100h400M0 150h400M0 200h400M0 250h400" />
+  </g>
+  <!-- Corporate Entity Card Background -->
+  <rect x="80" y="70" width="240" height="160" rx="12" fill="#2448D8" fill-opacity="0.15" stroke="#2448D8" stroke-width="1.5" />
+  <!-- Header Bar -->
+  <rect x="96" y="90" width="100" height="12" rx="3" fill="#2448D8" opacity="0.8" />
+  <rect x="96" y="112" width="60" height="8" rx="2" fill="#2448D8" opacity="0.4" />
+  <!-- Geometric Analytics Bars -->
+  <rect x="96" y="145" width="22" height="60" rx="4" fill="#2448D8" opacity="0.5" />
+  <rect x="126" y="130" width="22" height="75" rx="4" fill="#2448D8" opacity="0.7" />
+  <rect x="156" y="115" width="22" height="90" rx="4" fill="#2448D8" />
+  <!-- Key Accent Highlight: Top Analytics Bar & Verified Seal in Teal (#087F8C) -->
+  <rect x="186" y="95" width="22" height="110" rx="4" fill="#087F8C" />
+  <!-- Verified Corporate Entity Seal -->
+  <g transform="translate(255, 130)">
+    <circle cx="20" cy="20" r="28" fill="#087F8C" fill-opacity="0.2" stroke="#087F8C" stroke-width="2" />
+    <circle cx="20" cy="20" r="20" fill="#087F8C" />
+    <path d="M12 20l6 6 12-12" stroke="#F7F9FC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

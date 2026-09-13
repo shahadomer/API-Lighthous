@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" fill="none" role="img" aria-label="Maps and location category illustration">
+  <rect width="400" height="300" rx="16" fill="#0B1730" />
+  <!-- Topographic Contour Curves -->
+  <g opacity="0.15" stroke="#2448D8" stroke-width="1.5" fill="none">
+    <ellipse cx="200" cy="150" rx="130" ry="90" />
+    <ellipse cx="195" cy="155" rx="100" ry="70" />
+    <ellipse cx="190" cy="160" rx="70" ry="48" />
+    <ellipse cx="185" cy="165" rx="40" ry="28" />
+  </g>
+  <!-- Isochrone Boundary Polygon -->
+  <polygon points="120,110 260,80 310,180 230,230 110,190" fill="#2448D8" fill-opacity="0.2" stroke="#2448D8" stroke-width="2" stroke-linejoin="round" />
+  <!-- Crosshair Guides -->
+  <line x1="200" y1="80" x2="200" y2="220" stroke="#2448D8" stroke-width="1" stroke-dasharray="4 4" opacity="0.6" />
+  <line x1="130" y1="150" x2="270" y2="150" stroke="#2448D8" stroke-width="1" stroke-dasharray="4 4" opacity="0.6" />
+  <!-- Key Accent Highlight: Precise Pinpoint Coordinate Marker (Teal #087F8C) -->
+  <g transform="translate(200, 150)">
+    <circle cx="0" cy="0" r="28" fill="#087F8C" fill-opacity="0.2" />
+    <circle cx="0" cy="0" r="18" fill="#087F8C" fill-opacity="0.4" stroke="#087F8C" stroke-width="1.5" />
+    <!-- Map Pin Geometry -->
+    <path d="M0 -18 C-7 -18 -12 -13 -12 -6 C-12 3 0 16 0 16 C0 16 12 3 12 -6 C12 -13 7 -18 0 -18 Z" fill="#087F8C" stroke="#F7F9FC" stroke-width="1.5" />
+    <circle cx="0" cy="-6" r="4" fill="#F7F9FC" />
+  </g>
+  <!-- Coordinate Legend Tag -->
+  <rect x="250" y="195" width="80" height="20" rx="4" fill="#2448D8" fill-opacity="0.3" stroke="#2448D8" stroke-width="1" />
+  <line x1="260" y1="205" x2="318" y2="205" stroke="#F7F9FC" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+</svg>

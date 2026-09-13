@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" fill="none" role="img" aria-label="Developer tools and utilities category illustration">
+  <rect width="400" height="300" rx="16" fill="#0B1730" />
+  <!-- Terminal Window Shell -->
+  <rect x="80" y="65" width="240" height="170" rx="12" fill="#2448D8" fill-opacity="0.15" stroke="#2448D8" stroke-width="1.5" />
+  <!-- Terminal Title Bar -->
+  <path d="M80 77a12 12 0 0 1 12-12h216a12 12 0 0 1 12 12v23H80V77z" fill="#2448D8" fill-opacity="0.3" />
+  <circle cx="100" cy="82" r="4" fill="#F7F9FC" opacity="0.4" />
+  <circle cx="112" cy="82" r="4" fill="#F7F9FC" opacity="0.4" />
+  <circle cx="124" cy="82" r="4" fill="#F7F9FC" opacity="0.4" />
+  <!-- Monospace Code Prompt Structure -->
+  <g stroke-linecap="round">
+    <!-- Code Bracket Angle (Primary Blue) -->
+    <path d="M120 120l-20 25 20 25" stroke="#2448D8" stroke-width="3" />
+    <path d="M280 120l20 25-20 25" stroke="#2448D8" stroke-width="3" />
+    <line x1="210" y1="115" x2="190" y2="175" stroke="#2448D8" stroke-width="2" opacity="0.5" />
+  </g>
+  <!-- API Terminal Pipeline Commands -->
+  <text x="135" y="142" fill="#F7F9FC" font-family="monospace" font-size="14" font-weight="bold" opacity="0.9">&gt; apilh.dev</text>
+  <!-- Key Accent Highlight: Active Terminal Cursor / Toolchain Gear in Teal (#087F8C) -->
+  <rect x="235" y="130" width="10" height="16" fill="#087F8C" />
+  <!-- CLI Status Output Row -->
+  <rect x="110" y="195" width="85" height="16" rx="4" fill="#087F8C" fill-opacity="0.2" stroke="#087F8C" stroke-width="1" />
+  <circle cx="120" cy="203" r="3" fill="#087F8C" />
+  <line x1="130" y1="203" x2="185" y2="203" stroke="#F7F9FC" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+</svg>

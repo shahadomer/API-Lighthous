@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" fill="none" role="img" aria-label="Financial and payments category illustration">
+  <rect width="400" height="300" rx="16" fill="#0B1730" />
+  <!-- Security Shield & Currency Hex Pattern -->
+  <g opacity="0.12" stroke="#2448D8" stroke-width="1.5">
+    <polygon points="200,40 310,95 310,205 200,260 90,205 90,95" />
+    <circle cx="200" cy="150" r="90" stroke-dasharray="8 8" />
+  </g>
+  <!-- Geometric Ledger Card -->
+  <rect x="110" y="85" width="180" height="130" rx="12" fill="#2448D8" fill-opacity="0.2" stroke="#2448D8" stroke-width="2" />
+  <!-- Magnetic Chip (Key Accent Highlight: Teal #087F8C) -->
+  <rect x="135" y="115" width="36" height="28" rx="4" fill="#087F8C" />
+  <path d="M135 129h36M153 115v28" stroke="#0B1730" stroke-width="1.5" />
+  <!-- Contactless Payment Waves -->
+  <path d="M185 120a16 16 0 0 1 0 18M192 115a24 24 0 0 1 0 28M199 110a32 32 0 0 1 0 38" stroke="#F7F9FC" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+  <!-- Ledger Rows -->
+  <rect x="135" y="165" width="130" height="8" rx="2" fill="#F7F9FC" opacity="0.4" />
+  <rect x="135" y="180" width="80" height="8" rx="2" fill="#F7F9FC" opacity="0.2" />
+  <!-- Transaction Value Node -->
+  <circle cx="240" cy="184" r="12" fill="#087F8C" fill-opacity="0.3" />
+  <circle cx="240" cy="184" r="6" fill="#087F8C" />
+</svg>
