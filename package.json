@@ -15,7 +15,8 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate": "tsx scripts/migrate.ts",
     "db:seed": "tsx scripts/seed.ts",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "shots": "tsx scripts/capture-shots.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -84,7 +85,9 @@
     "eslint-plugin-prettier": "^5.2.6",
     "globals": "^15.15.0",
     "jsdom": "^25.0.0",
+    "playwright": "^1.63.0",
     "prettier": "^3.7.3",
+    "sharp": "^0.35.4",
     "tailwindcss": "^4.2.1",
     "tsx": "^4.23.13",
     "typescript": "^5.8.3",

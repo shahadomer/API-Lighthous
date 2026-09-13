@@ -1,0 +1,128 @@
+[
+  {
+    "id": "hero-catalog",
+    "group": "hero",
+    "alt": "API catalog grid showing verified listings, filter rail, and search populated with flight status",
+    "width": 1280,
+    "height": 981,
+    "files": {
+      "png": "hero-catalog.png",
+      "avif1x": "hero-catalog.avif",
+      "avif2x": "hero-catalog@2x.avif",
+      "webp1x": "hero-catalog.webp",
+      "webp2x": "hero-catalog@2x.webp"
+    },
+    "sizesBytes": {
+      "png": 400316,
+      "avif1x": 99911,
+      "avif2x": 232083,
+      "webp1x": 88738,
+      "webp2x": 228608
+    }
+  },
+  {
+    "id": "hero-detail",
+    "group": "hero",
+    "alt": "API detail page showing endpoints, authentication method, and live JSON response preview",
+    "width": 1280,
+    "height": 933,
+    "files": {
+      "png": "hero-detail.png",
+      "avif1x": "hero-detail.avif",
+      "avif2x": "hero-detail@2x.avif",
+      "webp1x": "hero-detail.webp",
+      "webp2x": "hero-detail@2x.webp"
+    },
+    "sizesBytes": {
+      "png": 303396,
+      "avif1x": 64489,
+      "avif2x": 136286,
+      "webp1x": 56900,
+      "webp2x": 139404
+    }
+  },
+  {
+    "id": "hero-dashboard",
+    "group": "hero",
+    "alt": "Provider dashboard composition showing listings with Published, In review, and Draft status pills",
+    "width": 1280,
+    "height": 817,
+    "files": {
+      "png": "hero-dashboard.png",
+      "avif1x": "hero-dashboard.avif",
+      "avif2x": "hero-dashboard@2x.avif",
+      "webp1x": "hero-dashboard.webp",
+      "webp2x": "hero-dashboard@2x.webp"
+    },
+    "sizesBytes": {
+      "png": 211979,
+      "avif1x": 38537,
+      "avif2x": 85069,
+      "webp1x": 33310,
+      "webp2x": 86792
+    }
+  },
+  {
+    "id": "door-marketplace",
+    "group": "door",
+    "alt": "API marketplace pricing plans panel with tiered developer and enterprise options",
+    "width": 800,
+    "height": 731,
+    "files": {
+      "png": "door-marketplace.png",
+      "avif1x": "door-marketplace.avif",
+      "avif2x": "door-marketplace@2x.avif",
+      "webp1x": "door-marketplace.webp",
+      "webp2x": "door-marketplace@2x.webp"
+    },
+    "sizesBytes": {
+      "png": 213720,
+      "avif1x": 47218,
+      "avif2x": 105257,
+      "webp1x": 41478,
+      "webp2x": 102318
+    }
+  },
+  {
+    "id": "door-host",
+    "group": "door",
+    "alt": "Hosting terminal displaying deployment logs beside a multi-step live deployment stepper",
+    "width": 800,
+    "height": 517,
+    "files": {
+      "png": "door-host.png",
+      "avif1x": "door-host.avif",
+      "avif2x": "door-host@2x.avif",
+      "webp1x": "door-host.webp",
+      "webp2x": "door-host@2x.webp"
+    },
+    "sizesBytes": {
+      "png": 160815,
+      "avif1x": 35770,
+      "avif2x": 78467,
+      "webp1x": 31464,
+      "webp2x": 77952
+    }
+  },
+  {
+    "id": "door-directory",
+    "group": "door",
+    "alt": "Directory list view highlighting free tier and public open API services",
+    "width": 800,
+    "height": 583,
+    "files": {
+      "png": "door-directory.png",
+      "avif1x": "door-directory.avif",
+      "avif2x": "door-directory@2x.avif",
+      "webp1x": "door-directory.webp",
+      "webp2x": "door-directory@2x.webp"
+    },
+    "sizesBytes": {
+      "png": 169213,
+      "avif1x": 36775,
+      "avif2x": 87244,
+      "webp1x": 31318,
+      "webp2x": 82028
+    }
+  }
+]

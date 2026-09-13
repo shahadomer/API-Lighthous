@@ -31,8 +31,6 @@ dist-ssr
 .env.test.local
 .env.production.local
 
-# Dev shots (generated at build time, not committed)
-public/images/generated/
 
 # Editor directories and files
 .vscode/*
