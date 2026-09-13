@@ -60,10 +60,14 @@ Ask Claude. Each is tracked until the Coordinator rules on it.
    **RESOLVED (DEV-01, 13 Sep 2026):** Shahad confirmed migration to Next.js App Router
    per section 12.1. TanStack Start removed. Database layer (Drizzle + PostgreSQL) is
    DEV-06 scope, not yet present.
-2. **Brand palette.** The plan (section 3.1–3.2) specifies navy `#17314D` and amber
+2. ~~**Brand palette.** The plan (section 3.1–3.2) specifies navy `#17314D` and amber
    `#FEBD21`, sampled from the actual logo, with measured contrast ratios. The existing
    `README.md` in this repo specifies a different palette (navy `#0B1730`, blue
-   `#2448D8`, teal `#087F8C`). Do not implement either as final until this is settled.
+   `#2448D8`, teal `#087F8C`). Do not implement either as final until this is settled.~~
+   **RESOLVED (DEV-03, 13 Sep 2026):** Shahad confirmed the README's brand palette:
+   navy `#0B1730`, deep blue `#2448D8`, teal `#087F8C`, warm white `#F7F9FC`. Full
+   OKLCH tonal ramps, semantic token mapping, dark theme, and a raw-hex lint rule
+   are implemented in `app/globals.css` and `eslint.config.js`.
 3. **Navigation and routes.** The plan (section 4.1) specifies five primary nav items
    including separate "Host your API" and "Sell your API" entries, plus a `/pricing`
    route. The existing route list has no `/host`, `/pricing`, or `/directory`, and the
