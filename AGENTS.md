@@ -68,11 +68,16 @@ Ask Claude. Each is tracked until the Coordinator rules on it.
    navy `#0B1730`, deep blue `#2448D8`, teal `#087F8C`, warm white `#F7F9FC`. Full
    OKLCH tonal ramps, semantic token mapping, dark theme, and a raw-hex lint rule
    are implemented in `app/globals.css` and `eslint.config.js`.
-3. **Navigation and routes.** The plan (section 4.1) specifies five primary nav items
+3. ~~**Navigation and routes.** The plan (section 4.1) specifies five primary nav items
    including separate "Host your API" and "Sell your API" entries, plus a `/pricing`
    route. The existing route list has no `/host`, `/pricing`, or `/directory`, and the
    README's nav differs from section 4.1. Do not add or remove nav items until this is
-   settled.
+   settled.~~
+   **RESOLVED (DEV-07, 13 Sep 2026):** Shahad confirmed the plan's section 4.1 nav
+   over the README's. The README's nav had no "Host your API" entry, which contradicted
+   section 1's locked decision that the platform requires three equal entry paths
+   (hosting, marketplace, directory). The five primary nav items are: `Explore APIs`
+   (mega panel), `Host your API`, `Sell your API`, `Developers` (mega panel), and `Pricing`.
 
 ## Workflow
 
