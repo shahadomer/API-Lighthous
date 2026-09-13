@@ -11,6 +11,25 @@ jobs:
     name: Install / Lint / Typecheck / Test / Build
     runs-on: ubuntu-latest
 
+    services:
+      postgres:
+        image: postgres:18-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: api_lighthouse_dev
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/api_lighthouse_dev
+      NEXT_TELEMETRY_DISABLED: 1
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,11 +48,14 @@ jobs:
       - name: Typecheck
         run: bun run typecheck
 
+      - name: Run Database Migrations
+        run: bun run db:migrate
+
+      - name: Seed Database
+        run: bun run db:seed
+
       - name: Test
         run: bun run test
 
       - name: Build
         run: bun run build
-        env:
-          # Suppress Next.js telemetry in CI
-          NEXT_TELEMETRY_DISABLED: 1
