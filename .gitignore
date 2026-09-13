@@ -1,4 +1,4 @@
-# Logs
+﻿# Logs
 logs
 *.log
 npm-debug.log*
@@ -7,14 +7,32 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+.pnp
+.pnp.js
+
+# Build output
 dist
 dist-ssr
 .output
 .vinxi
 .tanstack/**
 .nitro
-*.local
+.next/
+out/
+
+# Env — never commit real env files
+.env
+.env.*
+!.env.example
+
+# Lockfile from the Next.js branch — regenerated when we switch to npm
+package-lock.json
+
+# TypeScript cache
+*.tsbuildinfo
+next-env.d.ts
 
 # Wrangler / Cloudflare
 .wrangler/
