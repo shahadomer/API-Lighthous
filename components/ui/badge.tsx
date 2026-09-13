@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
@@ -10,16 +10,22 @@ const badgeVariants = cva(
   {
     variants: {
       variant: {
-        default: "border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80",
-        secondary:
-          "border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        destructive:
-          "border-transparent bg-destructive text-destructive-foreground shadow hover:bg-destructive/80",
-        outline: "text-foreground",
+        default: "border-transparent bg-primary text-primary-foreground shadow-xs",
+        secondary: "border-transparent bg-secondary text-secondary-foreground",
+        destructive: "border-transparent bg-destructive text-destructive-foreground shadow-xs",
+        outline: "border-outline text-foreground",
+        success: "border-transparent bg-success/15 text-success font-medium",
+        warning: "border-transparent bg-warning/15 text-warning font-medium",
+        neutral: "border-outline bg-surface-container text-muted-foreground",
+      },
+      shape: {
+        default: "rounded-md",
+        pill: "rounded-full",
       },
     },
     defaultVariants: {
       variant: "default",
+      shape: "default",
     },
   },
 );
